@@ -22,3 +22,27 @@
 ----------------------header--------------------------
 2019-06-02 22:19:25,120 [1] INFO  SystemLoggerRepository - 测试Log4net
  : ? R=4027 T=1
+
+----------------------header--------------------------
+2019-06-02 22:50:23,293 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3820 T=1
+
+----------------------header--------------------------
+2019-06-02 23:10:47,110 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2330 T=1
+
+----------------------header--------------------------
+2019-06-02 23:33:26,967 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3401 T=1
+
+----------------------header--------------------------
+2019-06-02 23:47:17,381 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=4257 T=1
+
+----------------------header--------------------------
+2019-06-02 23:49:07,200 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3919 T=1
+
+----------------------header--------------------------
+2019-06-02 23:51:06,587 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3282 T=1
