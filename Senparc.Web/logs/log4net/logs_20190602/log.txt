@@ -1,0 +1,24 @@
+
+----------------------header--------------------------
+2019-06-02 21:10:35,938 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3148 T=1
+
+----------------------header--------------------------
+2019-06-02 21:14:39,034 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2868 T=1
+
+----------------------header--------------------------
+2019-06-02 21:21:51,454 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=1986 T=1
+2019-06-02 21:22:24,234 [8] INFO  WebLoggerRepository - AdminUserInfo新增：SenparcCoreAdmin23（ID：1）
+ : ? R=34766 T=8
+2019-06-02 21:22:24,265 [8] INFO  SystemLoggerRepository - 系统信息被编辑
+ : ? R=34797 T=8
+
+----------------------header--------------------------
+2019-06-02 21:54:01,232 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2984 T=1
+
+----------------------header--------------------------
+2019-06-02 22:19:25,120 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=4027 T=1

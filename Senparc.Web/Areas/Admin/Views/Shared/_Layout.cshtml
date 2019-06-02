@@ -1,0 +1,66 @@
+@*@model Senparc.Areas.Admin.Models.VD.IBaseDeveloperVD*@
+@using System.Web.Mvc
+@using Senparc.Web.UI
+<!DOCTYPE html>
+<html lang="zh-CN" class="csstransforms3d">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <meta name="description" content="@ViewData["Title"]" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon">
+    @*本地*@
+    <environment include="Development">
+        <!-- ===============BASE ANTD CSS ===============-->
+        @*<link href="~/node_modules/ant-design-vue/dist/antd.css" rel="stylesheet" />*@
+        <link href="~/layui/dist/css/layui.css" rel="stylesheet" />
+    </environment>
+    @*线上*@
+    <environment exclude="Development">
+        <!-- ===============BASE ANTD CSS ===============-->
+        @*<link href="~/node_modules/ant-design-vue/dist/antd.min.css" rel="stylesheet" />*@
+        <link href="~/layui/dist/css/layui.css" rel="stylesheet" />
+    </environment>
+    @RenderSection("HeaderContent", false)
+    @RenderSection("Style", false)
+
+</head>
+<body class="layui-layout-body">
+    <div id="app" class="layui-layout layui-layout-admin">
+        @*顶部样式*@
+        <partial name="_AdminHeaderPartial" />
+        <partial name="_AdminMenuPartial"/>
+        @RenderBody()
+    </div>
+@*本地*@
+    <environment include="Development">
+
+        @*<!-- ===============BASE JQUERY SCRIPTS ===============-->
+        <script src="~/bower_components/jquery/dist/jquery.js"></script>
+        <!-- ===============BASE VUE SCRIPTS ===============-->
+        <script src="~/bower_components/vue/dist/vue.js"></script>
+        <!-- ===============BASE MOMENT SCRIPTS ===============-->
+        <script src="~/node_modules/ant-design-vue/node_modules/moment/src/moment.js"></script>
+        <!-- ===============BASE ANTD SCRIPTS ===============-->
+        <script src="~/node_modules/ant-design-vue/dist/antd.js"></script>*@
+    </environment>
+@*线上*@
+    <environment exclude="Development">
+        <script src="~/layui/dist/layui.js"></script>
+        @*<!-- ===============BASE JQUERY SCRIPTS ===============-->
+        <script src="~/bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- ===============BASE VUE SCRIPTS ===============-->
+        <script src="~/bower_components/vue/dist/vue.min.js"></script>
+        <!-- ===============BASE MOMENT SCRIPTS ===============-->
+        <script src="~/node_modules/ant-design-vue/node_modules/moment/min/moment.min.js"></script>
+        <!-- ===============BASE ANTD SCRIPTS ===============-->
+        <script src="~/node_modules/ant-design-vue/dist/antd.min.js"></script>*@
+    </environment>
+@RenderSection("scripts", false)
+
+@Html.RenderMessageBox()
+</body>
+
+</html>
